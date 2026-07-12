@@ -1,9 +1,92 @@
 body {
-  font-family: sans-serif;
-  margin: 40px;
-  background-color: #f5f5f5;
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background:
+    radial-gradient(circle at top left, #ffe0ef, transparent 35%),
+    radial-gradient(circle at bottom right, #d9ecff, transparent 35%),
+    #f8f7ff;
+  color: #2e2940;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 90px 30px;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: white;
+  color: #6f56ff;
+  font-weight: bold;
+  box-shadow: 0 8px 25px rgba(70, 60, 120, 0.12);
 }
 
 h1 {
-  color: #0078d4;
+  margin: 24px 0 16px;
+  font-size: 50px;
+}
+
+.subtitle {
+  max-width: 680px;
+  margin: 0 auto 30px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 16px;
+  background: white;
+  font-weight: bold;
+  box-shadow: 0 10px 30px rgba(70, 60, 120, 0.12);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #35c77a;
+  box-shadow: 0 0 0 5px rgba(53, 199, 122, 0.15);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 45px;
+}
+
+.card {
+  padding: 26px 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 10px 30px rgba(70, 60, 120, 0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #6f56ff;
+}
+
+.footer {
+  margin-top: 45px;
+  color: #77728a;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }

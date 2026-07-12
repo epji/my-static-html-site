@@ -2,11 +2,53 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My Static HTML Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunny Static Cloud</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Azure Static Web Apps Demo</h1>
-  <p>GitHub Actions からデプロイしています。中村</p>
+  <main class="container">
+
+    <div class="badge">
+      Azure Static Web Apps
+    </div>
+
+    <h1>Bunny Static Cloud ☁️🐇</h1>
+
+    <p class="subtitle">
+      GitHub Actions を利用して、Azure Static Web Apps への
+      自動デプロイに成功しました。
+    </p>
+
+    <div class="status">
+      <span class="dot"></span>
+      CI/CD Status: Success
+    </div>
+
+    <section class="cards">
+
+      <div class="card">
+        <h2>Code</h2>
+        <p>VS Code で HTML と CSS を編集</p>
+      </div>
+
+      <div class="card">
+        <h2>Push</h2>
+        <p>GitHub リポジトリへ変更を送信</p>
+      </div>
+
+      <div class="card">
+        <h2>Deploy</h2>
+        <p>GitHub Actions が Azure へ自動デプロイ</p>
+      </div>
+
+    </section>
+
+    <p class="footer">
+      Cloud Computing Week 11
+    </p>
+
+  </main>
 </body>
 </html>
